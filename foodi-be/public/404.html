@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>404 - Page Not Found 🥲</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="foodie-logo.jpg" />
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                background-color: #fff;
+            }
+            h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+                font-family: 'Roboto Slab', serif;
+                display: flex;
+                align-items: center;
+            }
+            .sad-image {
+                margin-left: 10px;
+                width: 36px;
+                height: 36px;
+            }
+            p {
+                font-size: 18px;
+                color: #888;
+                font-family: 'Roboto Slab', serif;
+            }
+            .link {
+                font-size: 18px;
+                color: black;
+                text-decoration: none;
+                padding: 8px 15px;
+                background: seashell;
+                border-radius: 8px;
+                font-family: 'Roboto Slab', serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            404 - Page Not Found
+            <img src="sad.gif" alt="🥲" class="sad-image" onerror="handleImageError(this)" />
+        </h1>
+        <p>Oops! The page you are looking for does not exist.</p>
+        <p><a href="/" class="link">Go to 🏠</a></p>
+
+
+        <script>
+            const sadImage = document.querySelector('.sad-image');
+            sadImage.addEventListener('error', handleImageError);
+    
+            function handleImageError(event) {
+                const img = event.target;
+                img.style.display = 'none'; // Hide the image
+                img.insertAdjacentText('afterend', img.alt); // Show the alt text next to the hidden image
+            }
+        </script>
+    </body>
+    </html>

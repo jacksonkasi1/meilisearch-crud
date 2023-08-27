@@ -1,0 +1,49 @@
+/* MenuCard.css */
+.menu-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+  }
+  
+  .menu-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .menu-card p {
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  .images {
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 10px;
+    /* scroll bar hide */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+  }
+  
+  .images img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 4px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .images img:hover {
+    transform: scale(1.1);
+  }

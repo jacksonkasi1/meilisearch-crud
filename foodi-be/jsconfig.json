@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/src": ["./src/*"],
+      "@/prisma": ["./prisma"],
+      "@/utils": ["./src/utils/*"],
+      "@/config": ["./src/config"],
+      "@/debug": ["./src/utils/debug.js"],
+      "@/meilisearch": ["./src/utils/meilisearch.js"],
+      "@/handler": ["./src/handler/*"],
+      "@/controller": ["./src/controller/*"],
+      "@/middleware": ["./src/middleware/*"]
+    }
+  }
+}

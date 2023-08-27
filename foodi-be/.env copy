@@ -1,0 +1,6 @@
+# DATABASE_URL=postgresql://postgres:xxxxxxxx@xxxxxxxx:5992/xxxxxxxx
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=xxxxxxxxxxxxx"
+
+# Meilisearch
+MEILISEARCH_HOST=
+MEILISEARCH_MASTER_KEY=

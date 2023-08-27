@@ -1,0 +1,3 @@
+# Meilisearch
+REACT_APP_MEILISEARCH_HOST="https://xxxxxxxxxxxx.xxx.meilisearch.io"
+REACT_APP_MEILISEARCH_MASTER_KEY="xxxxxxxxxxxxxxxx"
