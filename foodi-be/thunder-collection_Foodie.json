@@ -1,0 +1,117 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Foodie",
+    "dateExported": "2023-08-27T14:09:33.048Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "fe193031-7cfd-41ba-ae53-11f23431cf05",
+            "name": "Restaurant",
+            "containerId": "",
+            "created": "2023-08-27T11:34:33.986Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "473acf68-b405-4a14-a72c-fd7a291fb959",
+            "name": "Menu Items",
+            "containerId": "",
+            "created": "2023-08-27T11:54:09.278Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "55ea8567-3fb4-47d2-a168-02427cadb451",
+            "colId": "5f5f9fe4-467b-4c2f-a310-0d60bb8436ff",
+            "containerId": "fe193031-7cfd-41ba-ae53-11f23431cf05",
+            "name": "Add Restaurant",
+            "url": "http://localhost:5000/api/restaurant/add",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-27T11:35:09.425Z",
+            "modified": "2023-08-27T11:38:29.749Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"Delicious Eats\",\r\n    \"address\": \"123 Main Street\",\r\n    \"phone\": \"+123-456-7890\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "21d1cbb2-ba05-47ca-ad29-36cd71df9046",
+            "colId": "5f5f9fe4-467b-4c2f-a310-0d60bb8436ff",
+            "containerId": "473acf68-b405-4a14-a72c-fd7a291fb959",
+            "name": "Add Menu Item",
+            "url": "http://localhost:5000/api/menu/add",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-27T11:54:17.386Z",
+            "modified": "2023-08-27T12:11:26.806Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"Delicious Burger\",\r\n    \"description\": \"A mouthwatering burger with all the fixings.\",\r\n    \"price\": 9.99,\r\n    \"imageUrls\": [\r\n        \"https://media.istockphoto.com/id/1206323282/photo/juicy-hamburger-on-white-background.jpg?s=612x612&w=0&k=20&c=K0DxyiChLwewXcCy8aLjjOqkc8QXPgQMAW-vwRCzqG4=\",\r\n        \"https://cdn.quicksell.co/-M8HARIzOwGAbWF-dqNo/products/-MAViNVJZGKzRRFmPZXW.jpg\"\r\n    ],\r\n    \"restaurantId\": 1\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cf0fcfb6-d475-473e-b1f4-1c2a3ea02faf",
+            "colId": "5f5f9fe4-467b-4c2f-a310-0d60bb8436ff",
+            "containerId": "fe193031-7cfd-41ba-ae53-11f23431cf05",
+            "name": "Get All Restaurant",
+            "url": "http://localhost:5000/api/restaurant/all",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-08-27T11:54:30.200Z",
+            "modified": "2023-08-27T11:55:00.493Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9b7b085f-c939-4d71-898b-a5f088fe5169",
+            "colId": "5f5f9fe4-467b-4c2f-a310-0d60bb8436ff",
+            "containerId": "473acf68-b405-4a14-a72c-fd7a291fb959",
+            "name": "Search Menu Items",
+            "url": "http://localhost:5000/api/menu/search",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-08-27T11:54:43.537Z",
+            "modified": "2023-08-27T14:03:42.963Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "search",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "4c2fb2ab-8dbc-4780-982b-68ffdb3604e2",
+            "colId": "5f5f9fe4-467b-4c2f-a310-0d60bb8436ff",
+            "containerId": "473acf68-b405-4a14-a72c-fd7a291fb959",
+            "name": "Search Food By Prisma",
+            "url": "http://localhost:5000/api/menu/search-by-prisma?search",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-08-27T12:19:35.342Z",
+            "modified": "2023-08-27T14:03:37.095Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "search",
+                    "value": "",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
